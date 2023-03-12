@@ -10,17 +10,25 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future<void> four() async {
+      Future.delayed(
+        Duration(seconds: 3),
+        () => print(4),
+      );
+    }
+
     print(1);
     print(2);
     print(3);
 
     //print(4);
-    Future<void> four = Future.delayed(
-      const Duration(
-        seconds: 3,
-      ),
-    );
-    four.then((value) => print(4));
+    // Future<void> four = Future.delayed(
+    //   const Duration(
+    //     seconds: 3,
+    //   ),
+    // );
+    // four.then((value) => print(4));
+    four();
 
     print(5);
 
