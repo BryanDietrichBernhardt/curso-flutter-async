@@ -10,18 +10,25 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //
+    // async function
     Future<void> four() async {
       Future.delayed(
-        Duration(seconds: 3),
+        const Duration(seconds: 3),
         () => print(4),
       );
+    }
+
+    // sync function
+    void fourSync() {
+      print(4);
     }
 
     print(1);
     print(2);
     print(3);
 
-    //print(4);
+    // async var
     // Future<void> four = Future.delayed(
     //   const Duration(
     //     seconds: 3,
@@ -57,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text("Async Dart"),
       ),
-      body: Center(),
+      body: const Center(),
     );
   }
 }
