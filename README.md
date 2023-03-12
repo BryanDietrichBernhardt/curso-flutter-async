@@ -1,6 +1,6 @@
-# async_app
+# Async App
 
-A new Flutter project.
+Etapa do curso em Flutter sobre programação assíncrona.
 
 ## Getting Started
 
